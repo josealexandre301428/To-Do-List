@@ -1,0 +1,15 @@
+body {
+  font-family: monospace;
+  margin: 0;
+}
+
+header {
+  padding: 20px;
+  background-color: rgb(83 , 119 , 114);
+  margin-bottom: 50px;
+
+}
+
+.fundoSelecao {
+  background-color: rgb(128 , 128 , 128);
+}
