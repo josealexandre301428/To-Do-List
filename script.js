@@ -23,10 +23,28 @@ window.onload = function(){
           element.style.backgroundColor = 'white';
         });
         event.target.style.backgroundColor = "rgb(128 , 128 , 128)";
-        });
-    
+        }); 
   }
-    
+
+  //requisito 9 = Pontos importantes sobre este requisito:
+
+//* Crie uma classe CSS com o nome "completed" e defina a propriedade "text-decoration" com o valor "line-through".
+
+//* Utilize a classe CSS "completed" para adicionar o efeito de letra tachada (riscada) às tarefas finalizadas.
+
+function completed(){
+  let buttons = document.getElementById('lista-tarefas');
+        buttons.addEventListener('dblclick', (event)=> {
+       
+          if(event.target.className === 'itens'){
+            event.target.className = "itens completed";
+          }else if(event.target.className === 'itens completed'){
+            event.target.className = "itens";
+          }
+        }); 
+}
+   
   selectItem();
   createList();
+  completed();
 }
