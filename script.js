@@ -53,7 +53,22 @@ function apaga(){
       
     });
 }
+
+
+//Adicione um botão com id="remover-finalizados" que quando clicado remove somente os elementos finalizados da sua lista
+function removeFinalizados(){
+  let botao = document.getElementById('remover-finalizados');
+  let lista = document.querySelector('#lista-tarefas');
+    botao.addEventListener('click', function(){
+      let finalizados = document.querySelectorAll('.completed');
+      finalizados.forEach(final => final.remove());
+    
+      
+    });
+}
+
   apaga();
+  removeFinalizados();
   selectItem();
   createList();
   completed();
