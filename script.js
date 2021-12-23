@@ -43,7 +43,17 @@ function completed(){
           }
         }); 
 }
-   
+
+// Adicione um botão com id="apaga-tudo" que quando clicado deve apagar todos os itens da lista
+function apaga(){
+  let botao = document.getElementById('apaga-tudo');
+    botao.addEventListener('click', function(){
+      const quadro = document.querySelector('#lista-tarefas');
+      quadro.innerText = "";
+      
+    });
+}
+  apaga();
   selectItem();
   createList();
   completed();
