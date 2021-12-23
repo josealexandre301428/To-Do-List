@@ -15,16 +15,18 @@ window.onload = function(){
   }
 
   //adiciona cor de funo ao item clicado de lista
-
-  function selectItem(){
-    let itens = document.getElementById('lista-tarefas');
-      itens.addEventListener('click', (event)=> {
-        /*let item = document.querySelectorAll(".itens");*/
-       
-          event.target.className = "fundoSelecao";
+ function selectItem(){
+    let buttons = document.getElementById('lista-tarefas');
+        buttons.addEventListener('click', (event)=> {
+        const lista = document.querySelectorAll('.itens');
+          lista.forEach(element => {
+          element.style.backgroundColor = 'white';
         });
-      
-      }
+        event.target.style.backgroundColor = "rgb(128 , 128 , 128)";
+        });
+    
+  }
+    
   selectItem();
   createList();
 }
