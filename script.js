@@ -1,4 +1,6 @@
 window.onload = function(){
+  window.sessionStorage.getItem('itens');
+  
   //cria itens de lista a partir do input e button
   function createList(){
     let btn = document.querySelector("#criar-tarefa");
@@ -67,9 +69,23 @@ function removeFinalizados(){
     });
 }
 
+// Adicione um botão com id="salvar-tarefas" que salve o conteúdo da lista. Se você fechar e reabrir a página, a lista deve continuar no estado em que estava
+function salvar(){
+  let botao = document.getElementById('salvar-tarefas');
+  botao.addEventListener('click', function(){
+    let lista = document.querySelectorAll('.itens');
+    window.sessionStorage.setItem('itens', lista);
+
+    
+  });
+}
+
+
   apaga();
+  salvar();
   removeFinalizados();
   selectItem();
   createList();
   completed();
 }
+//referencias tiradas dos sites recomendados, tambem contei com a ajuda dos colegas via slack
