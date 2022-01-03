@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <title>To Do List</title>
 </head>
 <body>
-  <header>Minha Lista de Tarefas</header>
+  <header class="title">Minha Lista de Tarefas</header>
     <p id="funcionamento">Clique duas vezes em um item para marcá-lo como completo</p>
  
-  <section>
-    <input type="text" name="texto-tarefa" id="texto-tarefa" value="Sua tarefa aqui!" onfocus="this.value=''" >
-    <button id="criar-tarefa">Adicionar</button>
-    <ol id="lista-tarefas">
-      
-    </ol>
-    <button id="apaga-tudo">Apagar Tudo</button>
-    <button id="remover-finalizados">Apagar Finalizados</button>
-    <button id="salvar-tarefas">Salvar tarefas</button>
+  <section class="content">
+    <div class="center">
+      <input type="text" name="texto-tarefa" id="texto-tarefa" value="Sua tarefa aqui!" onfocus="this.value=''" >
+      <button class="botao" id="criar-tarefa">Adicionar</button>
+    </div>
+    <div class="center">
+      <ol id="lista-tarefas">
+        
+      </ol>
+    </div>
+    <div class="center">
+      <button class="botao" id="apaga-tudo">Apagar Tudo</button>
+      <button class="botao" id="remover-finalizados">Apagar Finalizados</button>
+      <button class="botao" id="salvar-tarefas">Salvar tarefas</button>
+    </div>
   </section>
+
  <script src="/script.js" ></script>
 </body>
 </html>

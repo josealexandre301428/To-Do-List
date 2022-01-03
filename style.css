@@ -1,6 +1,8 @@
 body {
   font-family: monospace;
   margin: 0;
+  background-color: rgba(103, 189, 216, 0.5);
+  
 }
 
 header {
@@ -8,6 +10,64 @@ header {
   background-color: rgb(83 , 119 , 114);
   margin-bottom: 50px;
 
+}
+
+.title {
+  text-align: center;
+
+  /* stylelint-disable-next-line font-family-name-quotes */
+  font-family: 'Pushster', cursive;
+  font-size: xx-large;
+  color: rgb(255 , 245 , 159);
+}
+
+.content {
+  font-size: 15px;
+}
+
+#texto-tarefa {
+  width: 250px;
+  height: 20px;
+}
+
+#criar-tarefa {
+  
+  margin-left: 15px ;
+}
+
+.botao {
+  background-color: rgb(83 , 119 , 114);
+  color: white;
+  font-size: large;
+  border-radius: 15px;
+
+}
+
+#texto-tarefa {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  
+}
+
+#lista-tarefas {
+  padding: 10px;
+}
+
+#funcionamento {
+  text-align: center;
+  font-size: medium;
+  color: rgb(0, 0, 0);
+}
+
+.center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .completed {

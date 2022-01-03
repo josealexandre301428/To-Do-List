@@ -88,4 +88,4 @@ function salvar(){
   createList();
   completed();
 }
-//referencias tiradas dos sites recomendados, tambem contei com a ajuda dos colegas via slack
+//referencias tiradas dos sites recomendados: W3Schools, MDN, StackOverflow, tambem contei com a ajuda do colega via slack e zoom: Gean Antunes - Turma 19 - Tribo B ,
